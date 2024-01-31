@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--<script src="./wasm_exec.js"></script>-->
+<html lang="zh-TW">
+
+<head>
+    <meta http-equiv="cache-control" content="no-cache, max-age=0">
+    <meta charset="UTF-8">
+    <title>TEXOL設備管理</title>
+    <link rel="stylesheet" type="text/css" href="./style2.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 DataTables 的 CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <!-- DataTables Select CSS -->
+    <link rel="stylesheet" type="text/css" href="./select.dataTables.min.css">
+    <!-- jQuery -->
+    <script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <div>
+
+        <table border="0" width="100%">
+            <tr>
+                <td width="18%">
+                    <div>
+                        <div id="sidebar">
+                            <table border="0" width="100%">
+                                <tr>
+                                    <img src="./Texol_logo.png" width="230" height="150">
+                                </tr>
+                                <tr>
+                                    <td width="15%">
+                                        <img src="./panic-button.png" width="40" height="40">
+                                    </td>
+                                    <td width="85%">
+                                        <button class="sidebarButton" data-module="0">MQTT Center</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="15%">
+                                        <img src="./panic-button.png" width="40" height="40">
+                                    </td>
+                                    <td width="85%">
+                                        <button class="sidebarButton" data-module="4">Devices</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="15%">
+                                        <img src="./panic-button.png" width="40" height="40">
+                                    </td>
+                                    <td width="85%">
+                                        <button class="sidebarButton" data-module="1">211MM1-B1</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="15%">
+                                        <img src="./panic-button.png" width="40" height="40">
+                                    </td>
+                                    <td width="85%">
+                                        <button class="sidebarButton" data-module="2">213MM1-B1</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="15%">
+                                        <img src="./panic-button.png" width="40" height="40">
+                                    </td>
+                                    <td width="85%">
+                                        <button class="sidebarButton" data-module="3">213MM2-R1</button>
+                                    </td>
+                                </tr>
+
+
+                            </table>
+                        </div>
+                </td>
+
+                <td width="82%">
+                    <div>
+                        <h1>End-Node配置頁面</h1>
+                    </div>
+                    <div id="deviceContainer0" style="display: none; color:rgb(129, 129, 135)" ;>
+
+                        <!-- 你的表格 -->
+                        <table id="myTable" class="display">
+                            <thead>
+                                <tr>
+                                    <th>DeviceID</th>
+                                    <th>UUID</th>
+                                    <th>Bridge</th>
+                                    <th>Channel</th>
+                                    <th>Pipe</th>
+                                    <th>SensorID</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="tableBody"></tbody>
+                        </table>
+
+                        <!-- 引入 DataTables 的 JavaScript -->
+
+                        <!-- jQuery -->
+                        <script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
+                        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+
+                    </div>
+                    <div id="deviceContainer1" style="display: none;">
+                    </div>
+                    <div id="deviceContainer2" style="display: none;">
+                    </div>
+                    <div id="deviceContainer3" style="display: none;">
+                    </div>
+                    <div id="deviceContainer4" style="display: none;">
+
+                        <!-- 你的表格 -->
+
+                        <table id="DeviceTable" class="display">
+
+                            <thead>
+
+                                <tr>
+                                    <th>
+                                        <div style="font-size: 30px;"> <!-- 调整这里的 font-size 值 -->
+                                            <img src="./device.png" width="30px" height="30px"> Devices
+                                        </div>
+                                    </th>
+                                    <th></th>
+                                    <th>
+
+                                    </th>
+                                    <th>
+                                        <div id="searchDiv"></div>
+
+
+                                        <input type="text" placeholder="Please Input DeviceID..."
+                                            style="background-image: url('./search.png'); background-size: 20px 20px; background-position: 10px center; background-repeat: no-repeat; padding-left: 40px; ">
+
+                    </div>
+
+                    </th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Protocol</th>
+                <th>Description</th>
+                <th>Labels</th>
+                <th></th>
+            </tr>
+            </thead>
+
+            <tbody id="tableBody2"></tbody>
+        </table>
+
+        <!-- 引入 DataTables 的 JavaScript -->
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+
+    </div>
+
+    <div id="devicesList" style="display: none;">
+        <h2>配置設置</h2>
+        <div id="deviceFields" style="display: none;">
+            <!-- 文本框將由 JavaScript 填充 -->
+        </div>
+        <div id="buttons" style="display: none;">
+            <button id="submitButton">提交</button>
+            <button id="backButton">回到初始網頁</button>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </table>
+    <!-- <script src="script_1.js"></script>
+ -->
+    <script src="script_1.js?timestamp=<%= new Date().getTime() %>"></script>
+
+
+
+</body>
+<!-- 在 body 的最下方引入 DataTables 選擇插件的 JavaScript -->
+<script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script>
+
+</html>

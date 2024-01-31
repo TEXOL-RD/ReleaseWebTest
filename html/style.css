@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* 背景颜色设置为米色 */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: #333; /* 背景颜色设置为深灰色 */
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+#deviceContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.device {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.device img {
+    width: 80px;
+    height: 80px;
+}
+
+.deviceButton {
+    display: block;
+    margin: 10px auto;
+    background-color: #3544e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#devicesList {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#deviceFields {
+    margin-top: 20px;
+}
+
+#deviceFields input[type="text"] {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 5px;
+    font-weight: bold; /* 设置文本框为粗体 */
+}
+
+#buttons {
+    margin-top: 20px;
+}
+
+#buttons button {
+    background-color: #3544e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backButton {
+    background-color: #ccc;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}

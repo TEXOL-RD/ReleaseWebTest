@@ -1,0 +1,129 @@
+{
+  "DeviceID": "00007X",
+  "Sensitivity": 20.2,
+  "Trigger_Level": 0.001,
+  "RPM": {
+    "RPM_S": 27000,
+    "RPM_E": 33000
+  },
+  "PIB_Array": [
+    {
+      "Band_Order": 0,
+      "Start": 1,
+      "Stop": 0.5,
+      "Magnification": 1
+    },
+    {
+      "Band_Order": 0,
+      "Start": 2,
+      "Stop": 0.5,
+      "Magnification": 1
+    },
+    {
+      "Band_Order": 0,
+      "Start": 4,
+      "Stop": 0.5,
+      "Magnification": 1
+    },
+    {
+      "Band_Order": 0,
+      "Start": 6,
+      "Stop": 0.5,
+      "Magnification": 1
+    },
+    {
+      "Band_Order": 0,
+      "Start": 8,
+      "Stop": 0.5,
+      "Magnification": 1
+    },
+    {
+      "Band_Order": 1,
+      "Start": 4900,
+      "Stop": 5100,
+      "Magnification": 1
+    },
+    {
+      "Band_Order": 1,
+      "Start": 5900,
+      "Stop": 6100,
+      "Magnification": 1
+    },
+    {
+      "Band_Order": 1,
+      "Start": 6900,
+      "Stop": 7100,
+      "Magnification": 1
+    },
+    {
+      "Band_Order": 1,
+      "Start": 7900,
+      "Stop": 8100,
+      "Magnification": 1
+    },
+    {
+      "Band_Order": 1,
+      "Start": 8900,
+      "Stop": 9100,
+      "Magnification": 1
+    }
+  ],
+  "QC_Array": [
+    {
+      "Warning": 3,
+      "Alarm": 5
+    },
+    {
+      "Warning": 3,
+      "Alarm": 5
+    },
+    {
+      "Warning": 3,
+      "Alarm": 5
+    },
+    {
+      "Warning": 3,
+      "Alarm": 5
+    },
+    {
+      "Warning": 3,
+      "Alarm": 5
+    },
+    {
+      "Warning": 3,
+      "Alarm": 5
+    },
+    {
+      "Warning": 3,
+      "Alarm": 5
+    },
+    {
+      "Warning": 3,
+      "Alarm": 5
+    },
+    {
+      "Warning": 3,
+      "Alarm": 5
+    },
+    {
+      "Warning": 3,
+      "Alarm": 5
+    },
+    {
+      "Warning": 3,
+      "Alarm": 5
+    },
+    {
+      "Warning": 3,
+      "Alarm": 5
+    },
+    {
+      "Warning": 3,
+      "Alarm": 5
+    },
+    {
+      "Warning": 3,
+      "Alarm": 5
+    }
+  ]
+}

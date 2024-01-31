@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    /* 背景颜色设置为米色 */
+    margin: 0;
+    padding: 20;
+    display: flex;
+    flex-direction: column;
+    /* 设置主轴方向为纵向，让子元素纵向排列 */
+    align-items: stretch;
+    /* 设置子元素在主轴方向上充满整个容器 */
+    min-height: 100vh;
+    /* 设置 body 的最小高度为视窗高度，以确保内容撑满整个屏幕 */
+}
+
+.trigger-image {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+h1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999; /* 設定 z-index，確保它在其他元素之上 */
+    text-align: left;
+    background-color: #454545;
+    /* 背景颜色设置为深灰色 */
+    color: #fff;
+    padding: 12px;
+    margin: 0;
+
+    
+}
+td {
+    vertical-align: top;
+}
+#container {
+    display: flex;
+}
+
+#sidebar {
+   
+    background-color: #454545;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0px;
+
+    /* 設定側邊欄的寬度 */
+    height: 100vh;
+
+    /* 占據整個視窗高度 */
+    overflow-y: auto;
+    /* 添加垂直滾動條 */
+
+    top: 0;
+    width: 100%;
+    z-index: 999; /* 設定 z-index，確保它在其他元素之上 */
+    /* 樣式化垂直滾動條 */
+    scrollbar-color: red green; /* WebKit 瀏覽器支持的滾動條顏色（滑塊和軌道的顏色，這裡設定為紅色和綠色） */
+    scrollbar-width: thin; /* Firefox 瀏覽器支持的滾動條寬度（thin、auto、none） */
+}
+
+.sidebarButton {
+    background-color: #454545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+    /* 設定寬度為 100% */
+    box-sizing: border-box;
+    /* 包含 padding 在內的盒模型 */
+}
+
+/* WebKit 瀏覽器支持的滾動條樣式 */
+#sidebar::-webkit-scrollbar {
+    width: 20px;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: rgb(234, 228, 228); /* 滑塊顏色 */
+}
+
+#sidebar::-webkit-scrollbar-track {
+    background-color: rgb(130, 136, 130); /* 軌道顏色 */
+}
+
+
+
+
+
+
+#deviceContainer0,
+#deviceContainer1,
+#deviceContainer2,
+#deviceContainer4,
+#deviceContainer3 {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px;
+}
+
+.device {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #00ab9c;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    float: left;
+}
+
+.device img {
+    width: 80px;
+    height: 80px;
+}
+
+.deviceButton {
+    display: block;
+    margin: 10px auto;
+    background-color: #ffffff;
+    color: #fff;
+  
+    border: none;
+    padding: 30px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#devicesList {
+    text-align: left;
+    background-color: #f5fefd;
+    border: 1px solid #ccc;
+    padding: 40px;
+    border-radius: 5px;
+    float: center;
+}
+
+#deviceFields {
+    margin-top: 20px;
+}
+
+#deviceFields input[type="text"] {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 5px;
+    font-weight: bold;
+    /* 设置文本框为粗体 */
+}
+
+#buttons {
+    margin-top: 20px;
+}
+
+#buttons button {
+    background-color: #3544e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backButton {
+    background-color: #ccc;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
