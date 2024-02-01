@@ -94,7 +94,7 @@ func main() {
 
 	http.Handle("/", handlers.CORS(headers, origins, methods)(r))
 
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe("0.0.0.0:8080", nil)
 	//done := make(chan bool)
 	//<-done
 
